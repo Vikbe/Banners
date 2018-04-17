@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "View and update html";
+}
+
+<h2>View rendered and raw html</h2> 
+<p>Try viewing banners ID 1 - 5 for examples</p>
+
+<div>
+    <div class="col-md-6">
+        <form name="getform" id="getform" class="form-group">
+            <div class="form-group">
+                <label class="text-info">Banner ID</label>
+                <input type="number" id="getID" class="form-control" style="width: 25%" />
+            </div>
+            <div id="htmlbox" class="form-group">
+                <label class="text-info">Rendered HTML</label>
+
+            </div>
+
+            <button type="submit" class="btn btn-default">Get HTML</button>
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        <form name="updateform" id="updateform" class="form-group">
+            <div class="form-group">
+                <label class="text-info">Banner ID</label>
+                <input type="number" id="updateID" class="form-control" readonly style="width: 25%" />
+            </div>
+            <div class="form-group">
+                <label class="text-info">Raw HTML</label>
+                <textarea id="updateInput" class="form-control" rows="25"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Update</button>
+        </form>
+    </div>
+</div>
+
+
